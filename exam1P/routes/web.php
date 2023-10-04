@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Auth::routes();
+Route::view('/', 'inicio')->name('apodoInicio');
+Route::view('/vista1', 'vista1')->name('apodoVista1');
+Route::view('/vista2', 'vista2')->name('apodoVista2');
+Route::view('/vista3', 'vista3')->name('apodoVista3'); 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+

@@ -1,4 +1,4 @@
-@extends('layouts.plantilla')
+@extends('partials.plantilla')
 
 @section('titulo', 'Vista 1')
 

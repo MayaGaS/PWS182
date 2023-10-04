@@ -10,7 +10,8 @@
 
 </head>
 <body>
-    @include('partials.navbar')
+    @include('partials.scrollspy')
+    @include('partials.spinner')
 
     @yield('contenido')    
 
