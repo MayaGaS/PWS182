@@ -17,7 +17,8 @@
     </div>
 @endif
 
-<form method='POST' action='/guardarComic'>
+<div class="card m-auto mt-5 p-5 col-sm-5">
+<form action='/guardarComic' method='post' >
     @csrf
     <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nombre: </label>
@@ -37,11 +38,12 @@
             <p class='text-primary'> {{ $errors->first('noComicPublicado') }} </p>
     </div>
 
-    <botton type="submit" class="btn btn-primary"> 
+    <button type="submit" class="btn btn-primary"> 
         Enviar
-    </botton>
+    </button>
 
 </form>
+</div>
 
 
 

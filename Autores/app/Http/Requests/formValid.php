@@ -22,9 +22,9 @@ class formValid extends FormRequest
     public function rules(): array
     {
         return [
-            'nombre' => 'required|min:4', //Nombre: (Obligatorio y mínimo 4 caracteres)
-            'fechaPublicacion' => 'required', //Fecha Publicación: (Obligatorio)
-            'noComicPublicado' => 'required|max:9999|numeric', //No. Comics publicados: (Obligatorio, números, máximo 4 números)
+            'nombreCompleto' => 'required|min:4',
+            'fechaNacimiento' => 'required',
+            'noLibrosPublicados' => 'required|max:9999|numeric',
         ];
     }
 }
